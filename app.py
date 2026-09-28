@@ -4,6 +4,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 st.set_page_config(page_title="Stock Comparison Tool", layout="wide")
+st.markdown(
+    """
+    <style>
+    .watermark {
+        position: fixed;
+        bottom: 8px;
+        right: 12px;
+        font-size: 12px;
+        color: rgba(120, 120, 120, 0.6);
+        z-index: 100;
+    }
+    </style>
+    <div class="watermark">By AGrahamC</div>
+    """,
+    unsafe_allow_html=True,
+)
 st.title("Stock Comparison Tool")
 st.write("Compare the performance, risk and correlation of any listed companies, "
          "and see how an equal-weight portfolio of them would have behaved.")
