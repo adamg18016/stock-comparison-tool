@@ -88,7 +88,7 @@ if run:
 
     # ---------- DISPLAY ----------
     st.subheader("Summary")
-    st.dataframe(summary, use_container_width=True)
+   st.dataframe(summary, width="stretch")
 
     c1, c2 = st.columns(2)
     c1.metric("Equal-weight portfolio return", f"{portfolio_return:.1f}%")
